@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+    outline: none; border: none;
+    transition: all .2s linear;
+}
+
+:root{
+    --text-color: #272727;
+    --bg-color: #fff;
+    --button-color: #E55473;
+    --paragraph-color: rgba(39, 39, 39, 0.60);
+
+    --f1-color: #E554731A;
+    --f2-color: #0597A026;
+    --f3-color: #477D1126;
+
+    --gray-color: #2727270D;
+    --black-color: #111010;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    padding: 0 15rem;
+}
+
+section{
+    padding: 0 15rem;
+}
+
+footer{
+    padding: 0 15rem;
+}
+
+p{
+    color: var(--paragraph-color);
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.875rem;
+    margin-top: 1.5rem;
+}
+
+.heading{
+    margin-top: 10rem;
+    color: var(--text-color);
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.sub-heading{
+    color: var(--paragraph-color);
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.875rem;
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.btn{
+    display: inline-flex;
+    padding: 1.25rem 2.6875rem;
+    border-radius: 0.5rem;
+    color: var(--bg-color);
+    background: var(--button-color);
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    border: .2rem solid transparent;
+    cursor: pointer;
+}
+
+.btn:hover{
+    color: var(--button-color);
+    border: .2rem solid var(--button-color);
+    background: transparent;
+}
+
+
+
+/* ================== header design ================ */
+
+.header{
+    background: var(--f1-color);
+}
+
+.header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .container .content{
+    max-width: 45rem;    
+}
+
+.header .container .content h1{
+    font-size: 5rem;
+    font-weight: 800;
+    color: var(--text-color);
+}
+
+.header .container .head-img{
+    width: 39.6875rem;
+    height: 50rem;
+    object-fit: contain;
+}
+
+.header .container .head-img img{
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+/* ================== features design ================ */
+
+.features .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    gap: 1rem;
+}
+
+.features .container .full-box{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.features .container .full-box .flower1{
+    width: 29rem;
+    height: 33.625rem;
+    padding: 2.94rem;
+    border-radius: 18.75rem 18.75rem 0rem 0rem;
+    background: var(--f1-color);
+    overflow: hidden;
+}
+
+.features .container .full-box .flower1 img{
+    width: 100%;
+}
+
+.features .container .full-box .flower2{
+    width: 29rem;
+    height: 33.625rem;
+    padding: 2.94rem;
+    border-radius: 18.75rem 18.75rem 0rem 0rem;
+    background: var(--f2-color);
+    overflow: hidden;
+}
+
+.features .container .full-box .flower2 img{
+    width: 100%;
+}
+
+.features .container .full-box .flower3{
+    width: 29rem;
+    height: 33.625rem;
+    padding: 2.94rem;
+    border-radius: 18.75rem 18.75rem 0rem 0rem;
+    background: var(--f3-color);
+    overflow: hidden;
+}
+
+.features .container .full-box .flower3 img{
+    width: 100%;
+}
+
+.features .container .full-box .flower{
+    background: var(--f1-color);
+}
+
+.features .container .full-box a{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-top: 2rem;
+    text-decoration: underline;
+}
+
+
+
+/* ================== about design ================ */
+
+.about .container{
+    margin-top: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20rem;
+    width: 100%;
+    background: var(--gray-color);
+    gap: 6.25rem;
+}
+
+.about .container .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about .container .box img{
+    width: 5.5rem;
+    height: auto;
+}
+
+.about .container .box span{
+    font-size: 1.5rem;
+    font-style: 400;
+    font-weight: 600;
+    line-height: 2.1875rem;
+    margin-top: 1.5rem;
+}
+
+
+
+
+/* ================== about design ================ */
+
+.hot-deal{
+    margin-top: 8rem;
+    min-height: 38.75rem;
+    background: #E554730D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hot-deal .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 11.63rem;
+}
+
+.hot-deal .container .content{
+    text-align: center;
+    max-width: 37.125rem;;
+}
+
+.hot-deal .container .content h2{
+    color: var(--text-color);
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.hot-deal .container .deal-img{
+    width: 19.875rem;
+    height: 26.25rem;
+    object-fit: contain;
+}
+
+.hot-deal .container .deal-img img{
+    width: 100%;
+    height: auto;
+}
+
+
+
+/* ================== instagram design ================ */
+
+.insta .container{
+    margin-top: 3rem;
+    display: flex;
+    gap: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* ================== news-latter design ================ */
+
+.news .content{
+    background-image: url('assets/Rectangle\ 9.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 28.0625rem;
+    border-radius: 0.5rem;
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.news .content h2{
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--text-color);
+}
+
+.news .content p{
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+.news .content input[type="email"] {
+    width: 43.75rem;
+    height: 4rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--text-color);
+    background: var(--bg-color);
+    padding: 1.5rem;
+    border-radius: .5rem;
+}
+
+.form{
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.news .content .btn {
+    margin-left: 1rem;
+    margin-top: 0;
+}
+
+
+
+/* ================== footer design ================ */
+
+.footer{
+    margin-top: 8rem;
+    width: 100%;
+    height: 28.0625rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: var(--black-color);
+}
+
+.footer .content{
+    max-width: 39.0625rem;
+}
+
+.footer .content h2{
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--bg-color);
+}
+
+.footer .content h2 span{
+    color: var(--button-color);
+}
+
+.footer .content p{
+    color: var(--bg-color);
+    margin-bottom: 2rem;
+}
+
+.footer .content .copyright{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #FFFFFF66;
+}
